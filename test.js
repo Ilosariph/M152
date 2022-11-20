@@ -4,6 +4,6 @@ window.onscroll = function () {
 };
 
 function scrollRotate() {
-    let image = document.getElementById("abc");
-    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+    let image = document.getElementById("logo");
+    image.style.transform = "rotate(" + window.pageYOffset + "deg)";
 }
