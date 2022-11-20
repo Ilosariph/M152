@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <title>FPV Drohnen</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#1C1D1B',
+            accent: '#DF227A',
+            font: '#FFFFFF'
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 
-<body class="
-      antialiased
-      bg-gradient-to-r
-      from-pink-300
-      via-purple-300
-      to-indigo-400
-    ">
+<body class="bg-background text-font">
 <header>
     <nav class="
           flex flex-wrap
@@ -23,12 +30,11 @@
           py-4
           md:py-0
           px-4
-          text-lg text-gray-700
-          bg-white
+          text-accent
         ">
         <div>
             <a href="index.html" class="flex items-center">
-                <img src="Logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo" id="abc"><!--todo remove id -->
+                <img src="Logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo" id="abc">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">FPV Drohnen</span>
             </a>
         </div>
@@ -40,18 +46,17 @@
         <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
             <ul class="
               pt-4
-              text-base text-gray-700
               md:flex
               md:justify-between
               md:pt-0">
                 <li>
-                    <a class="md:p-4 py-2 block hover:text-purple-400" href="index.html">Start</a>
+                    <a class="md:p-4 py-2 block" href="index.html">Start</a>
                 </li>
                 <li>
-                    <a class="md:p-4 py-2 block hover:text-purple-400" href="fotos.html">Fotos</a>
+                    <a class="md:p-4 py-2 block" href="fotos.html">Fotos</a>
                 </li>
                 <li>
-                    <a class="md:p-4 py-2 block hover:text-purple-400" href="video.html">Video</a>
+                    <a class="md:p-4 py-2 block" href="video.html">Video</a>
                 </li>
             </ul>
         </div>
@@ -61,19 +66,17 @@
 <div class="px-4">
     <div class="
           flex
-          justify-center
-          items-center
-          bg-white
-          mx-auto
+          bg-accent
           max-w-2xl
           rounded-lg
           my-16
           p-16
         ">
-        <h1 class="text-2xl font-medium">Responsive Navbar with TailwindCSS</h1>
+        <p class="text-m">Responsive Navbar with TailwindCSS<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd<br>abcd</p>
     </div>
 </div>
 
+<script src="menu.js"></script>
 <script src="test.js"></script>
 </body>
 </html>
