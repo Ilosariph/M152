@@ -1,4 +1,3 @@
-// index.js
 window.onscroll = function () {
     scrollRotate();
 };
