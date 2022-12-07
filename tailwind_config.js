@@ -6,7 +6,8 @@ tailwind.config = {
                 accent: '#DF227A'
             },
             spacing: {
-                fotodiv: 'calc(100vh - 64px)'
+                fotodiv: 'calc(100vh - 64px)',
+                modal: '66vh'
             }
         }
     }
