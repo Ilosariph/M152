@@ -12,6 +12,9 @@
 <body class="
       antialiased
       bg-background
+      flex
+      flex-col
+      h-full min-h-screen
     ">
 <header class="sticky top-0 bg-background">
     <nav class="
@@ -59,7 +62,7 @@
     <div class="h-1 bg-accent"></div>
 </header>
 
-<div class="p-8 flex flex-column flex-col lg:flex-row align-middle h-fotodiv">
+<div class="p-8 flex flex-grow flex-1 flex-col lg:flex-row align-middle h-fotodiv">
     <div class="basis-1/3 flex mx-4 items-center lg:my-0 my-4">
         <picture>
             <source media="(max-width: 768px)" srcset="https://res.cloudinary.com/dome1yy5a/image/upload/w_768/v1670427635/Bild_fertig_Gro%C3%9F_ako0mm.png" />
@@ -74,6 +77,11 @@
         <img src="Bild.png" class="rounded-lg h-max" alt="Kleine FPV-Drohne" onclick="showModal('Bild.png')">
     </div>
 </div>
+
+<footer class="w-full bottom-0">
+    <div class="h-1 bg-accent"></div>
+    <p class="text-white py-2 mx-2">&#169 Simon Wick 2022</p>
+</footer>
 
 </body>
 <script src="menu.js"></script>

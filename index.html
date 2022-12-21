@@ -13,6 +13,9 @@
 <body class="
       antialiased
       bg-background
+      flex
+      flex-col
+      h-full min-h-screen
     ">
 <header class="sticky top-0 bg-background">
     <nav class="
@@ -59,7 +62,7 @@
     <div class="h-1 bg-accent"></div>
 </header>
 
-<div class="p-8 flex flex-column flex-col lg:flex-row">
+<div class="p-8 flex flex-grow flex-1 flex-col lg:flex-row">
     <div class="
           basis-2/3
           rounded-lg
@@ -72,6 +75,12 @@
         <img src="Bild.png" class="rounded-lg" alt="Kleine FPV-Drohne">
     </div>
 </div>
+
+<footer class="w-full bottom-0">
+    <div class="h-1 bg-accent"></div>
+    <p class="text-white py-2 mx-2">&#169 Simon Wick 2022</p>
+</footer>
+
 </body>
 <script src="menu.js"></script>
 <script src="rotate-logo.js"></script>
